@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Mihir1703/JsDataEncryptDecrypt#readme",
   "dependencies": {
     "cryptojs": "^2.5.3",
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "min-heap": "^0.2.3"
   }
 }
