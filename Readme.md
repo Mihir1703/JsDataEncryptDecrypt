@@ -4,3 +4,4 @@
  - The encrypted data is converted into binary digit format  huffman encoding which gives a data table and string of data as output
  - The obtained huffman string is compressed using Run-length encoding (RLE) technique 
  - Now both data table and huffman string is encrypted with same key
+ - To encrypt it takes single digit milliseconds thus can be used anywhere to transfer data securely.
