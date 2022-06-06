@@ -18,8 +18,9 @@
   },
   "homepage": "https://github.com/Mihir1703/JsDataEncryptDecrypt#readme",
   "dependencies": {
-    "cryptojs": "^2.5.3",
+    "crypto-js": "^4.1.1",
     "express": "^4.18.1",
-    "min-heap": "^0.2.3"
+    "min-heap": "^0.2.3",
+    "modify-response-middleware": "^1.1.0"
   }
 }
