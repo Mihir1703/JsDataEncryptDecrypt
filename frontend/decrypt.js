@@ -1,5 +1,3 @@
-const CryptoJS = require("crypto-js");
-
 const reformString = (data) => {
     let ans = "";
     for (let i = 0; i < data.length; i++) {
@@ -15,7 +13,7 @@ const reformString = (data) => {
     return ans;
 }
 
-module.exports = (incomingData) => {
+const decrypt = (incomingData) => {
     let data = incomingData
     data['data'] = reformString(CryptoJS.AES.decrypt(data['data'], data['key']).toString(CryptoJS.enc.Utf8));
     data['dataTable'] = JSON.parse(CryptoJS.AES.decrypt(data['dataTable'], data['key']).toString(CryptoJS.enc.Utf8));
@@ -37,7 +35,7 @@ module.exports = (incomingData) => {
     orignalData = CryptoJS.AES.decrypt(orignalData, data['key']).toString(CryptoJS.enc.Utf8)
     try {
         return JSON.parse(orignalData);
-    }catch(e){
+    } catch (e) {
         return orignalData;
     }
 }
